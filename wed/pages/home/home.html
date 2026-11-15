@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math_TTTTTH | Trang chủ</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background-color: #ffffff;
+            padding: 12px 40px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: bold;
+            font-size: 20px;
+            color: #1e3c72;
+        }
+
+        .logo-icon {
+            background: #1e3c72;
+            color: white;
+            padding: 6px 10px;
+            border-radius: 8px;
+            font-size: 18px;
+        }
+
+        .nav-link {
+            margin-left: 30px;
+            text-decoration: none;
+            color: #1e3c72;
+            font-weight: 600;
+            border-bottom: 2px solid #1e3c72;
+            padding-bottom: 4px;
+        }
+
+        /* Main Container */
+        .main-container {
+            background: #ffffff;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 50px 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 90%;
+        }
+
+        .main-title {
+            font-size: 32px;
+            color: #1e3c72;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .main-subtitle {
+            font-size: 16px;
+            color: #555;
+            max-width: 800px;
+            margin: 0 auto 40px auto;
+            line-height: 1.6;
+        }
+
+        /* Cards Grid */
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .card {
+            background: #fff;
+            border: 2px solid #eaeaea;
+            border-radius: 16px;
+            padding: 30px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+        }
+
+        /* Card specific borders */
+        .card.theory {
+            border-color: #3b82f6;
+        }
+
+        .card.practice {
+            border-color: #10b981;
+        }
+
+        .card.exam {
+            border-color: #ef4444;
+        }
+
+        .card-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .card-title {
+            font-size: 22px;
+            font-weight: 700;
+            color: #222;
+            margin-bottom: 15px;
+        }
+
+        .card-desc {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.5;
+            margin-bottom: 25px;
+            flex-grow: 1;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            color: white;
+            transition: background 0.2s;
+        }
+
+        .btn-theory {
+            background-color: #3b82f6;
+        }
+
+        .btn-theory:hover {
+            background-color: #2563eb;
+        }
+
+        .btn-practice {
+            background-color: #10b981;
+        }
+
+        .btn-practice:hover {
+            background-color: #059669;
+        }
+
+        .btn-exam {
+            background-color: #ef4444;
+        }
+
+        .btn-exam:hover {
+            background-color: #dc2626;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #cbd5e1;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo-area">
+            <span class="logo-icon">M</span>
+            Math_TTTTTH
+        </div>
+        <a href="#" class="nav-link">Trang chủ</a>
+    </header>
+
+    <!-- Main Content -->
+    <div class="main-container">
+        <h1 class="main-title">Chào mừng bạn đến với Math_TTTTTH – Nơi Khám Phá Toán Học!</h1>
+        <p class="main-subtitle">
+            Từ những bài toán đơn giản nhất đến những tư duy phức tạp, hãy khám phá và chinh phục thế giới toán học!
+        </p>
+
+        <div class="cards-grid">
+            <!-- Card Lý Thuyết -->
+            <div class="card theory">
+                <div>
+                    <div class="card-icon">💡</div>
+                    <h2 class="card-title">Lý Thuyết</h2>
+                    <p class="card-desc">
+                        Hệ thống kiến thức toán học từ căn bản đến nâng cao. Dễ hiểu, có ví dụ minh họa chi tiết.
+                    </p>
+                </div>
+                <!-- Đường dẫn trỏ tới file ly_thuyet.html tương ứng với cấu trúc thư mục của bạn -->
+                <a href="../ly_thuyet/lythuyet.html" class="btn btn-theory">Xem Lý Thuyết</a>
+            </div>
+
+            <!-- Card Bài Tập -->
+            <div class="card practice">
+                <div>
+                    <div class="card-icon">✏️</div>
+                    <h2 class="card-title">Bài Tập</h2>
+                    <p class="card-desc">
+                        Thực hành kỹ năng với hàng ngàn bài tập đa dạng theo từng cấp độ. Có đáp án chi tiết.
+                    </p>
+                </div>
+                <!-- Đường dẫn trỏ tới file bai_tap.html -->
+                <a href="../bai_tap/bai_tap.html" class="btn btn-practice">Làm Bài Tập</a>
+            </div>
+
+            <!-- Card Luyện Đề -->
+            <div class="card exam">
+                <div>
+                    <div class="card-icon">⏱️</div>
+                    <h2 class="card-title">Luyện Đề</h2>
+                    <p class="card-desc">
+                        Rèn luyện tốc độ và sự chính xác với bộ đề thi thử sát thực tế. Tự chấm điểm.
+                    </p>
+                </div>
+                <!-- Đường dẫn trỏ tới file luyen_de.html -->
+                <a href="../luyen_de/luyen_de.html" class="btn btn-exam">Bắt Đầu Luyện Đề</a>
+            </div>
+        </div>
+    </div>
+
+    <!--
